@@ -4955,5 +4955,53 @@ function initSliders() {
     },
     on: {}
   });
+  const reviewsSlider = document.querySelectorAll(".reviews__slider");
+  if (reviewsSlider.length) {
+    reviewsSlider.forEach((slider) => {
+      const parentSlider = slider.parentElement;
+      const swiperNextBtn = parentSlider.querySelector(".swiper-button-next");
+      const swiperPrevBtn = parentSlider.querySelector(".swiper-button-prev");
+      const swiperPagination = parentSlider.querySelector(".swiper-pagination");
+      new Swiper(slider, {
+        modules: [Navigation, Pagination],
+        observer: true,
+        observeParents: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        speed: 800,
+        navigation: {
+          prevEl: swiperPrevBtn,
+          nextEl: swiperNextBtn
+        },
+        pagination: {
+          el: swiperPagination,
+          clickable: true
+        },
+        breakpoints: {
+          319.98: {
+            slidesPerView: 1,
+            spaceBetween: 21
+          },
+          479.98: {
+            slidesPerView: 1.5,
+            spaceBetween: 16
+          },
+          767.98: {
+            slidesPerView: 2.3,
+            spaceBetween: 16
+          },
+          991.98: {
+            slidesPerView: 3,
+            spaceBetween: 16
+          },
+          1199.98: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        },
+        on: {}
+      });
+    });
+  }
 }
 document.querySelector("[data-fls-slider]") ? window.addEventListener("load", initSliders) : null;
