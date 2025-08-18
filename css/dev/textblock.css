@@ -242,7 +242,6 @@
     text-decoration: underline;
   }
   .text-block__more.active:hover {
-    background-color: var(--red) !important;
     color: var(--white);
   }
 }
