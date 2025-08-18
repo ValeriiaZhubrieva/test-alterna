@@ -175,7 +175,7 @@ body {
   border: 1px solid var(--red);
   background-color: var(--red);
   color: var(--white);
-  transition: border 0.3s, background 0.3s, color 0.3s;
+  transition: border 0.4s, background 0.3s, color 0.3s;
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -343,6 +343,7 @@ body {
   border: 1px solid var(--grey);
   border-radius: 29px;
   padding: 50px 44px;
+  transition: box-shadow 0.3s;
 }
 .product-card > *:not(:last-child) {
   margin-bottom: 26px;
@@ -437,9 +438,6 @@ body {
 .input-field--white .input-field__input::placeholder {
   color: rgba(240, 239, 239, 0.5);
 }
-.input-field--white .input-field__input:focus {
-  outline: 1.5px solid var(--white);
-}
 .input-field--long {
   flex: 1 1 auto;
 }
@@ -456,6 +454,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 110%;
+  outline: none !important;
 }
 .input-field__input::placeholder {
   color: var(--grey);
@@ -463,9 +462,6 @@ body {
 }
 .input-field__input:focus::placeholder {
   opacity: 0;
-}
-.input-field__input:focus {
-  outline: 1.5px solid var(--black);
 }
 .input-field textarea.input-field__input {
   padding: 20px 40px;
@@ -1952,6 +1948,9 @@ textarea.input {
   }
   .swiper-pagination .swiper-pagination-bullet:hover {
     background-color: var(--black);
+  }
+  .product-card:hover {
+    box-shadow: 0px 0px 20px 0px rgba(165, 164, 164, 0.6);
   }
   .breadcrumbs__link:hover {
     color: var(--black);
