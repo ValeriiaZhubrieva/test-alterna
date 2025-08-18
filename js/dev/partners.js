@@ -4841,7 +4841,7 @@ function initSliders() {
         observeParents: true,
         slidesPerView: 3,
         spaceBetween: 30,
-        speed: 800,
+        speed: 600,
         navigation: {
           prevEl: swiperPrevBtn,
           nextEl: swiperNextBtn
@@ -4889,7 +4889,7 @@ function initSliders() {
         observeParents: true,
         slidesPerView: 4.28,
         spaceBetween: 30,
-        speed: 800,
+        speed: 600,
         navigation: {
           prevEl: swiperPrevBtn,
           nextEl: swiperNextBtn
@@ -4934,7 +4934,7 @@ function initSliders() {
     observeParents: true,
     slidesPerView: 1,
     spaceBetween: 16,
-    speed: 800,
+    speed: 600,
     navigation: {
       prevEl: ".swiper-button-prev",
       nextEl: ".swiper-button-next"
@@ -4968,7 +4968,7 @@ function initSliders() {
         observeParents: true,
         slidesPerView: 3,
         spaceBetween: 30,
-        speed: 800,
+        speed: 600,
         navigation: {
           prevEl: swiperPrevBtn,
           nextEl: swiperNextBtn

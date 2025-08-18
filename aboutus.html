@@ -11,14 +11,14 @@
 		<link rel="preload" href="./assets/fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Про нас</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1755447165842"></script>
-		<script type="module" crossorigin="" src="./js/partners.min.js?v=1755447165842"></script>
-		<script type="module" crossorigin="" src="./js/textblock.min.js?v=1755447165842"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755447165842">
-		<link rel="stylesheet" crossorigin="" href="./css/partners.min.css?v=1755447165842">
-		<link rel="stylesheet" crossorigin="" href="./css/textblock.min.css?v=1755447165842">
-		<link rel="stylesheet" crossorigin="" href="./css/page-error.min.css?v=1755447165842">
-		<link rel="stylesheet" crossorigin="" href="./css/reviews.min.css?v=1755447165842">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1755508881135"></script>
+		<script type="module" crossorigin="" src="./js/partners.min.js?v=1755508881135"></script>
+		<script type="module" crossorigin="" src="./js/textblock.min.js?v=1755508881135"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755508881135">
+		<link rel="stylesheet" crossorigin="" href="./css/partners.min.css?v=1755508881135">
+		<link rel="stylesheet" crossorigin="" href="./css/textblock.min.css?v=1755508881135">
+		<link rel="stylesheet" crossorigin="" href="./css/page-error.min.css?v=1755508881135">
+		<link rel="stylesheet" crossorigin="" href="./css/reviews.min.css?v=1755508881135">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -490,11 +490,11 @@
 										</div>
 										<div class="input-field input-field--white">
 											<label class="input-field__label">Телефон*</label>
-											<input autocomplete="off" type="text" name="phone" placeholder="+38..." class="input-field__input">
+											<input autocomplete="off" type="tel" name="phone" placeholder="+38..." class="input-field__input" data-fls-input-mask="+38 (999) 999 - 99 - 99">
 										</div>
 										<div class="input-field input-field--white">
 											<label class="input-field__label">Email*</label>
-											<input autocomplete="off" type="text" name="email" placeholder="...@..." class="input-field__input">
+											<input autocomplete="off" type="text" name="email" placeholder="...@..." class="input-field__input" data-fls-input-mask="*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]">
 										</div>
 									</div>
 									<div class="consultation__col">
@@ -732,17 +732,17 @@
 								</div>
 								<a href="#" class="footer__policy">Політика конфіденційності</a>
 							</div>
-							<div class="footer__bottom">
+							<a href="#" class="footer__info">
 								<div class="footer__info-text">
 									<span>Розроблений та підтримується веб-студією</span>
 									<svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M21.8047 12.5002L11.3817 22.9232M21.8047 12.5002L11.3817 2.07715M21.8047 12.5002L2.19332 12.0807" stroke="currentColor" stroke-opacity="0.5" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
 									</svg>
 								</div>
-								<a href="#" class="footer__info-logo">
+								<div class="footer__info-logo">
 									<img src="./assets/img/logo-studio.svg" alt="Image" loading="lazy">
-								</a>
-							</div>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -765,18 +765,18 @@
 							<div class="popup__text">Заповніть форму і наш менеджер зв’яжеться з вами в найближчі години</div>
 						</div>
 						<form action="#" class="popup__form">
-							<div class="popup__inouts">
+							<div class="popup__inputs">
 								<div class="input-field">
 									<label class="input-field__label">Імʼя*</label>
 									<input autocomplete="off" type="text" name="name" placeholder="Ваше імʼя" class="input-field__input">
 								</div>
 								<div class="input-field">
 									<label class="input-field__label">Телефон*</label>
-									<input autocomplete="off" type="text" name="phone" placeholder="+38..." class="input-field__input">
+									<input autocomplete="off" type="tel" name="phone" placeholder="+38..." class="input-field__input" data-fls-input-mask="+38 (999) 999 - 99 - 99">
 								</div>
 								<div class="input-field">
 									<label class="input-field__label">Email*</label>
-									<input autocomplete="off" type="text" name="email" placeholder="...@..." class="input-field__input">
+									<input autocomplete="off" type="text" name="email" placeholder="...@..." class="input-field__input" data-fls-input-mask="*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]">
 								</div>
 							</div>
 							<label data-fls-checkbox="" class="checkbox">
