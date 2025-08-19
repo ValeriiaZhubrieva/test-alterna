@@ -10,10 +10,14 @@
 		<link rel="preload" href="./assets/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>404</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1755612112133"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755612112133">
-		<link rel="stylesheet" crossorigin="" href="./css/page-error.min.css?v=1755612112133">
+		<title>Галерея</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1755612112135"></script>
+		<script type="module" crossorigin="" src="./js/slider.min.js?v=1755612112135"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755612112135">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1755612112135">
+		<link rel="stylesheet" crossorigin="" href="./css/gallery.min.css?v=1755612112135">
+		<link rel="stylesheet" crossorigin="" href="./css/proposals.min.css?v=1755612112135">
+		<link rel="stylesheet" crossorigin="" href="./css/consultation.min.css?v=1755612112135">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -90,30 +94,292 @@
 				</div>
 			</header>
 			<main class="page">
-				<section class="page-error section-bg-decor">
-					<div class="page-error__container">
-						<div class="page-error__body">
-							<div class="page-error__code">
-								<img src="./assets/img/404.svg" alt="404" loading="lazy">
-							</div>
-							<div class="page-error__content">
-								<div class="page-error__subtitle title title--h4">Перепрошуємо, сторінку не знайдено...</div>
-								<div class="page-error__btns">
-									<a href="#" class="page-error__btn button-empty">
-										<span class="button__text-1">Повернутися на головну</span>
-										<span class="button__text-2">На головну</span>
+				<section class="gallery-hero">
+					<div class="gallery-hero__container">
+						<div class="breadcrumbs">
+							<a href="#" class="breadcrumbs__link">Головна</a>
+							<span class="breadcrumbs__link active">Галерея</span>
+						</div>
+						<div class="gallery-hero__body">
+							<h1 class="gallery-hero__title title title--h1">наші роботи</h1>
+							<div class="gallery-hero__content">
+								<div class="gallery-hero__btns">
+									<a data-fls-popup-link="popup" href="#" class="gallery-hero__btn button">
+										<span>Звʼязатися</span>
 										<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M26.107 3.02175V26.3607M26.107 3.02175H2.76804M26.107 3.02175L3.68073 24.5087" stroke="currentColor" stroke-width="4.20578" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
 									</a>
-									<a href="#" class="page-error__btn button">
-										<span>До каталогу</span>
+									<a href="#" class="gallery-hero__btn button-empty button-white">
+										<span>Каталог</span>
 										<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M26.107 3.02175V26.3607M26.107 3.02175H2.76804M26.107 3.02175L3.68073 24.5087" stroke="currentColor" stroke-width="4.20578" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
 									</a>
 								</div>
+								<div class="gallery-hero__descr descr-hero">
+									надійний виробник для промислових підприємтсв з
+									<span>2008</span>
+									року
+								</div>
 							</div>
+						</div>
+						<div class="gallery-hero__bg">
+							<picture>
+								<source srcset="./assets/img/gallery/gallery-hero-mob.webp" media="(max-width: 479.98px)">
+								<img alt="promo-img" src="./assets/img/gallery/gallery-hero.webp">
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section class="gallery">
+					<div class="gallery__container">
+						<div class="gallery__head">
+							<h2 class="gallery__title title title--h3">галерея</h2>
+							<div class="gallery__text">
+								У цьому розділі ми представляємо приклади реалізованих проєктів та продукції компанії ALTERNA. Галерея
+                демонструє
+                широкий спектр наших можливостей — від гумотехнічних виробів для залізничної інфраструктури до засобів
+                індивідуального
+                захисту та обладнання для промислових підприємств.
+							</div>
+						</div>
+						<div class="gallery__items">
+							<div class="gallery__item">
+								<img alt="Image" loading="lazy" src="./assets/img/gallery/image-1.webp">
+							</div>
+							<div class="gallery__item">
+								<img alt="Image" loading="lazy" src="./assets/img/gallery/image-2.webp">
+							</div>
+							<div class="gallery__item">
+								<img alt="Image" loading="lazy" src="./assets/img/gallery/image-3.webp">
+							</div>
+							<div class="gallery__item">
+								<img alt="Image" loading="lazy" src="./assets/img/gallery/image-4.webp">
+							</div>
+							<div class="gallery__item">
+								<img alt="Image" loading="lazy" src="./assets/img/gallery/image-5.webp">
+							</div>
+							<div class="gallery__item">
+								<img alt="Image" loading="lazy" src="./assets/img/gallery/image-6.webp">
+							</div>
+							<div class="gallery__item">
+								<img alt="Image" loading="lazy" src="./assets/img/gallery/image-7.webp">
+							</div>
+							<div class="gallery__item">
+								<img alt="Image" loading="lazy" src="./assets/img/gallery/image-9.webp">
+							</div>
+							<div class="gallery__item">
+								<img alt="Image" loading="lazy" src="./assets/img/gallery/image-8.webp">
+							</div>
+						</div>
+						<div class="gallery__bottom">
+							<a href="#" class="gallery__more button-dark button--middle">
+								<span>Показати ще</span>
+								<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+							<div class="gallery__text">
+								Ми пишаємося тим, що наша продукція сприяє розвитку промисловості та забезпечує надійність у
+                найважливіших сферах.
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="proposals">
+					<div class="proposals__container">
+						<div class="proposals__head">
+							<h2 class="proposals__title title title--h3">популярні товари</h2>
+							<a href="#" class="proposals__btn button-empty button-dark button--middle">
+								<span>До каталогу</span>
+								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+						</div>
+						<div data-fls-slider="" class="proposals__slider swiper">
+							<div class="proposals__wrapper swiper-wrapper">
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/we-produce/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="proposals__bottom slider-bottom">
+							<div class="slider-bottom__arrows">
+								<button type="button" class="swiper-button-prev">
+									<svg width="46" height="50" viewbox="0 0 46 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.57031 25L24.2849 3.28537M2.57031 25L24.2849 46.7146M2.57031 25L43.4273 25.8739" stroke="currentColor" stroke-width="4.87278" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</button>
+								<button type="button" class="swiper-button-next">
+									<svg width="46" height="50" viewbox="0 0 46 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M43.4297 25L21.7151 3.28537M43.4297 25L21.7151 46.7146M43.4297 25L2.57268 25.8739" stroke="currentColor" stroke-width="4.87278" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</button>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="consultation">
+					<div class="consultation__container">
+						<div class="consultation__head">
+							<h2 class="consultation__title title title--h3">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</h2>
+							<a href="#" class="consultation__btn button-empty button-white button--middle">
+								<span>Контакти</span>
+								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+						</div>
+						<div class="consultation__body">
+							<form action="#" class="consultation__form">
+								<div class="consultation__columns">
+									<div class="consultation__col">
+										<div class="input-field input-field--white">
+											<label class="input-field__label">Імʼя*</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Ваше імʼя" class="input-field__input">
+										</div>
+										<div class="input-field input-field--white">
+											<label class="input-field__label">Телефон*</label>
+											<input autocomplete="off" type="tel" name="phone" placeholder="+38..." class="input-field__input" data-fls-input-mask="+38 (999) 999 - 99 - 99">
+										</div>
+										<div class="input-field input-field--white">
+											<label class="input-field__label">Email*</label>
+											<input autocomplete="off" type="text" name="email" placeholder="...@..." class="input-field__input" data-fls-input-mask="*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]">
+										</div>
+									</div>
+									<div class="consultation__col">
+										<div class="input-field input-field--white">
+											<label class="input-field__label">Назва команії</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Ваша компанія" class="input-field__input">
+										</div>
+										<div class="input-field input-field--white input-field--long">
+											<label class="input-field__label">Коментар</label>
+											<textarea name="phone" placeholder="Декілька слів про ваш запит" class="input-field__input"></textarea>
+										</div>
+									</div>
+								</div>
+								<label data-fls-checkbox="" class="checkbox checkbox--white">
+									<input class="checkbox__input" type="checkbox" value="1" name="policy" checked>
+									<span class="checkbox__text">Я погоджуюсь з політикою конфіденційності</span>
+								</label>
+								<button type="submit" class="consultation__send button-white">
+									<span>Звʼязатися</span>
+									<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M26.107 3.02175V26.3607M26.107 3.02175H2.76804M26.107 3.02175L3.68073 24.5087" stroke="currentColor" stroke-width="4.20578" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</button>
+							</form>
+							<div class="consultation__descr title title--h6">Заповніть форму і наш менеджер зв’яжеться з вами в найближчі години</div>
 						</div>
 					</div>
 				</section>

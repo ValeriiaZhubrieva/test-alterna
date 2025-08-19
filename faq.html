@@ -10,13 +10,15 @@
 		<link rel="preload" href="./assets/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Блог</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1755612112136"></script>
-		<script type="module" crossorigin="" src="./js/textblock.min.js?v=1755612112136"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755612112136">
-		<link rel="stylesheet" crossorigin="" href="./css/textblock.min.css?v=1755612112136">
-		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1755612112136">
-		<link rel="stylesheet" crossorigin="" href="./css/consultation.min.css?v=1755612112136">
+		<title>Часті питання</title>
+		<script type="module" crossorigin="" src="./js/faq.min.js?v=1755612112134"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755612112134">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1755612112134">
+		<link rel="stylesheet" crossorigin="" href="./css/faq.min.css?v=1755612112134">
+		<link rel="stylesheet" crossorigin="" href="./css/proposals.min.css?v=1755612112134">
+		<link rel="stylesheet" crossorigin="" href="./css/consultation.min.css?v=1755612112134">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -96,166 +98,392 @@
 				<div class="breadcrumbs">
 					<div class="breadcrumbs__container">
 						<a href="#" class="breadcrumbs__link">Головна</a>
-						<span class="breadcrumbs__link active">Блог</span>
+						<span class="breadcrumbs__link active">FAQ</span>
 					</div>
 				</div>
-				<section class="blog-hero">
-					<div class="blog-hero__container">
-						<div class="blog-hero__body">
-							<h1 class="blog-hero__title title title--h1">блог</h1>
-							<div class="blog-hero__btns">
-								<a href="#" class="blog-hero__btn button-empty">
-									<span>Каталог</span>
-									<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M26.107 3.02175V26.3607M26.107 3.02175H2.76804M26.107 3.02175L3.68073 24.5087" stroke="currentColor" stroke-width="4.20578" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg>
-								</a>
-								<a data-fls-popup-link="popup" href="#" class="blog-hero__btn button">
-									<span>Звʼязатися</span>
-									<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M26.107 3.02175V26.3607M26.107 3.02175H2.76804M26.107 3.02175L3.68073 24.5087" stroke="currentColor" stroke-width="4.20578" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg>
-								</a>
+				<section class="faq-hero section-bg-decor">
+					<div class="faq-hero__container">
+						<div class="faq-hero__body">
+							<h1 class="faq-hero__title title title--h1">часті питання</h1>
+							<div class="faq-hero__content">
+								<div class="faq-hero__descr descr-hero descr-hero--dark">
+									надійний виробник для промислових підприємтсв з
+									<span>2008</span>
+									року
+								</div>
+								<div class="faq-hero__btns">
+									<a data-fls-popup-link="popup" href="#" class="faq-hero__btn button">
+										<span>Звʼязатися</span>
+										<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M26.107 3.02175V26.3607M26.107 3.02175H2.76804M26.107 3.02175L3.68073 24.5087" stroke="currentColor" stroke-width="4.20578" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</a>
+									<a href="#" class="faq-hero__btn button-empty">
+										<span>Каталог</span>
+										<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M26.107 3.02175V26.3607M26.107 3.02175H2.76804M26.107 3.02175L3.68073 24.5087" stroke="currentColor" stroke-width="4.20578" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</a>
+								</div>
 							</div>
-							<div class="blog-hero__descr descr-hero">
-								надійний виробник для промислових підприємтсв з
-								<span>2008</span>
-								року
-							</div>
-						</div>
-						<div class="blog-hero__bg">
-							<picture>
-								<source srcset="./assets/img/blog/hero-bg-mob.webp" media="(max-width: 649.98px)">
-								<img alt="promo-img" src="./assets/img/blog/hero-bg.webp">
-							</picture>
 						</div>
 					</div>
 				</section>
-				<section class="articles">
-					<div class="articles__container">
-						<div class="articles__head">
-							<h2 class="articles__title title title--h3">корисні статті</h2>
-							<a href="#" class="articles__btn button-empty button-dark button--middle">
-								<span>Переглянути каталог</span>
+				<section class="faq">
+					<div class="faq__container">
+						<div class="faq__head">
+							<h2 class="faq__title title title--h3">питання та відповіді</h2>
+							<a href="#" class="faq__btn button-empty button-dark button--middle">
+								<span>Галерея робіт</span>
 								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg>
 							</a>
 						</div>
-						<div class="articles__items">
-							<a href="#" class="articles__card">
-								<div class="articles__card-img">
-									<img alt="Image" loading="lazy" src="./assets/img/blog/image-1.webp">
+						<div data-fls-spollers="" data-fls-spollers-one="" class="faq__items spollers">
+							<details class="spollers__item" data-fls-spollers-open="">
+								<summary class="spollers__title title title--h6">Які товари ви виробляєте?</summary>
+								<div class="spollers__body">
+									<p>Ми спеціалізуємося на:</p>
+									<ul>
+										<li>
+											гумотехнічних виробах для промислових підприємств: підрейкові та нашпальні прокладки,
+                            техпластини, автошини, сировина для гумових виробів, гумова крихта;
+										</li>
+										<li>засобах індивідуального захисту;</li>
+										<li>обладнанні для інфраструктури.</li>
+									</ul>
+									<p>
+										Наша продукція відповідає сучасним стандартам якості та призначена для інтенсивної експлуатації
+                        у складних умовах.
+                        Завдяки власному виробництву ми можемо забезпечити не лише
+										<a href="#">широкий асортимент</a>
+										, а
+                        й індивідуальні
+                        рішення під конкретні
+                        потреби клієнтів.
+									</p>
 								</div>
-								<div class="articles__card-body">
-									<div class="articles__card-title title title--h6">особливості виробництва гтв: від сировини до готової продукції</div>
-									<button type="button" class="articles__card-btn button-empty button-white button--small">
-										<span>Детальніше</span>
-										<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</button>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title--h6">Чи є у вас власне виробництво?</summary>
+								<div class="spollers__body">
+									<p>Ми спеціалізуємося на:</p>
+									<ol>
+										<li>
+											гумотехнічних виробах для промислових підприємств: підрейкові та нашпальні прокладки,
+                            техпластини, автошини, сировина для гумових виробів, гумова крихта;
+										</li>
+										<li>засобах індивідуального захисту;</li>
+										<li>обладнанні для інфраструктури.</li>
+									</ol>
+									<p>
+										Наша продукція відповідає сучасним стандартам якості та призначена для інтенсивної експлуатації
+                        у складних умовах.
+                        Завдяки власному виробництву ми можемо забезпечити не лише
+										<a href="#">широкий асортимент</a>
+										, а
+                        й індивідуальні
+                        рішення під конкретні
+                        потреби клієнтів.
+									</p>
 								</div>
-							</a>
-							<a href="#" class="articles__card">
-								<div class="articles__card-img">
-									<img alt="Image" loading="lazy" src="./assets/img/blog/image-2.webp">
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title--h6">З якими підприємствами ви співпрацюєте?</summary>
+								<div class="spollers__body">
+									<p>Ми спеціалізуємося на:</p>
+									<ol>
+										<li>
+											гумотехнічних виробах для промислових підприємств: підрейкові та нашпальні прокладки,
+                            техпластини, автошини, сировина для гумових виробів, гумова крихта;
+										</li>
+										<li>засобах індивідуального захисту;</li>
+										<li>обладнанні для інфраструктури.</li>
+									</ol>
+									<p>
+										Наша продукція відповідає сучасним стандартам якості та призначена для інтенсивної експлуатації
+                        у складних умовах.
+                        Завдяки власному виробництву ми можемо забезпечити не лише
+										<a href="#">широкий асортимент</a>
+										, а
+                        й індивідуальні
+                        рішення під конкретні
+                        потреби клієнтів.
+									</p>
 								</div>
-								<div class="articles__card-body">
-									<div class="articles__card-title title title--h6">Роль інновацій у виробництві гумових виробів: що змінює ринок сьогодні</div>
-									<button type="button" class="articles__card-btn button-empty button-white button--small">
-										<span>Детальніше</span>
-										<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</button>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title--h6">Чи можна замовити індивідуальне виготовлення продукції?</summary>
+								<div class="spollers__body">
+									<p>Ми спеціалізуємося на:</p>
+									<ul>
+										<li>
+											гумотехнічних виробах для промислових підприємств: підрейкові та нашпальні прокладки,
+                            техпластини, автошини, сировина для гумових виробів, гумова крихта;
+										</li>
+										<li>засобах індивідуального захисту;</li>
+										<li>обладнанні для інфраструктури.</li>
+									</ul>
+									<p>
+										Наша продукція відповідає сучасним стандартам якості та призначена для інтенсивної експлуатації
+                        у складних умовах.
+                        Завдяки власному виробництву ми можемо забезпечити не лише
+										<a href="#">широкий асортимент</a>
+										, а
+                        й індивідуальні
+                        рішення під конкретні
+                        потреби клієнтів.
+									</p>
 								</div>
-							</a>
-							<a href="#" class="articles__card">
-								<div class="articles__card-img">
-									<img alt="Image" loading="lazy" src="./assets/img/blog/image-3.webp">
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title--h6">Як оформити замовлення?</summary>
+								<div class="spollers__body">
+									<p>Ми спеціалізуємося на:</p>
+									<ul>
+										<li>
+											гумотехнічних виробах для промислових підприємств: підрейкові та нашпальні прокладки,
+                            техпластини, автошини, сировина для гумових виробів, гумова крихта;
+										</li>
+										<li>засобах індивідуального захисту;</li>
+										<li>обладнанні для інфраструктури.</li>
+									</ul>
+									<p>
+										Наша продукція відповідає сучасним стандартам якості та призначена для інтенсивної експлуатації
+                        у складних умовах.
+                        Завдяки власному виробництву ми можемо забезпечити не лише
+										<a href="#">широкий асортимент</a>
+										, а
+                        й індивідуальні
+                        рішення під конкретні
+                        потреби клієнтів.
+									</p>
 								</div>
-								<div class="articles__card-body">
-									<div class="articles__card-title title title--h6">Як правильно зберігати гумотехнічні вироби: поради від виробника</div>
-									<button type="button" class="articles__card-btn button-empty button-white button--small">
-										<span>Детальніше</span>
-										<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</button>
+							</details>
+						</div>
+					</div>
+				</section>
+				<section class="faq">
+					<div class="faq__container">
+						<div class="faq__head">
+							<h2 class="faq__title title title--h3">технічні питання</h2>
+						</div>
+						<div data-fls-spollers="" data-fls-spollers-one="" class="faq__items spollers">
+							<details class="spollers__item" data-fls-spollers-open="">
+								<summary class="spollers__title title title--h6">Які товари ви виробляєте?</summary>
+								<div class="spollers__body">
+									<p>Ми спеціалізуємося на:</p>
+									<ul>
+										<li>
+											гумотехнічних виробах для промислових підприємств: підрейкові та нашпальні прокладки,
+                            техпластини, автошини, сировина для гумових виробів, гумова крихта;
+										</li>
+										<li>засобах індивідуального захисту;</li>
+										<li>обладнанні для інфраструктури.</li>
+									</ul>
+									<p>
+										Наша продукція відповідає сучасним стандартам якості та призначена для інтенсивної експлуатації
+                        у складних умовах.
+                        Завдяки власному виробництву ми можемо забезпечити не лише
+										<a href="#">широкий асортимент</a>
+										, а
+                        й індивідуальні
+                        рішення під конкретні
+                        потреби клієнтів.
+									</p>
 								</div>
-							</a>
-							<a href="#" class="articles__card">
-								<div class="articles__card-img">
-									<img alt="Image" loading="lazy" src="./assets/img/blog/image-4.webp">
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title--h6">Чи можна замовити індивідуальне виготовлення продукції?</summary>
+								<div class="spollers__body">
+									<p>Ми спеціалізуємося на:</p>
+									<ol>
+										<li>
+											гумотехнічних виробах для промислових підприємств: підрейкові та нашпальні прокладки,
+                            техпластини, автошини, сировина для гумових виробів, гумова крихта;
+										</li>
+										<li>засобах індивідуального захисту;</li>
+										<li>обладнанні для інфраструктури.</li>
+									</ol>
+									<p>
+										Наша продукція відповідає сучасним стандартам якості та призначена для інтенсивної експлуатації
+                        у складних умовах.
+                        Завдяки власному виробництву ми можемо забезпечити не лише
+										<a href="#">широкий асортимент</a>
+										, а
+                        й індивідуальні
+                        рішення під конкретні
+                        потреби клієнтів.
+									</p>
 								</div>
-								<div class="articles__card-body">
-									<div class="articles__card-title title title--h6">Гумова крихта: екологічний матеріал з широкими можливостями</div>
-									<button type="button" class="articles__card-btn button-empty button-white button--small">
-										<span>Детальніше</span>
-										<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</button>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title--h6">Як оформити замовлення?</summary>
+								<div class="spollers__body">
+									<p>Ми спеціалізуємося на:</p>
+									<ol>
+										<li>
+											гумотехнічних виробах для промислових підприємств: підрейкові та нашпальні прокладки,
+                            техпластини, автошини, сировина для гумових виробів, гумова крихта;
+										</li>
+										<li>засобах індивідуального захисту;</li>
+										<li>обладнанні для інфраструктури.</li>
+									</ol>
+									<p>
+										Наша продукція відповідає сучасним стандартам якості та призначена для інтенсивної експлуатації
+                        у складних умовах.
+                        Завдяки власному виробництву ми можемо забезпечити не лише
+										<a href="#">широкий асортимент</a>
+										, а
+                        й індивідуальні
+                        рішення під конкретні
+                        потреби клієнтів.
+									</p>
 								</div>
-							</a>
-							<a href="#" class="articles__card">
-								<div class="articles__card-img">
-									<img alt="Image" loading="lazy" src="./assets/img/blog/image-5.webp">
-								</div>
-								<div class="articles__card-body">
-									<div class="articles__card-title title title--h6">Сучасні зіз: як обрати надійне рішення для працівників</div>
-									<button type="button" class="articles__card-btn button-empty button-white button--small">
-										<span>Детальніше</span>
-										<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</button>
-								</div>
-							</a>
-							<a href="#" class="articles__card">
-								<div class="articles__card-img">
-									<img alt="Image" loading="lazy" src="./assets/img/blog/image-6.webp">
-								</div>
-								<div class="articles__card-body">
-									<div class="articles__card-title title title--h6">Прокладки для залізничної колії: чому вони важливі для безпеки руху</div>
-									<button type="button" class="articles__card-btn button-empty button-white button--small">
-										<span>Детальніше</span>
-										<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</button>
-								</div>
+							</details>
+						</div>
+					</div>
+				</section>
+				<section class="proposals">
+					<div class="proposals__container">
+						<div class="proposals__head">
+							<h2 class="proposals__title title title--h3">популярні товари</h2>
+							<a href="#" class="proposals__btn button-empty button-dark button--middle">
+								<span>До каталогу</span>
+								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
 							</a>
 						</div>
-						<div class="pagination">
-							<a href="#" class="pagination__arrow">
-								<svg width="38" height="40" viewbox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M2.65625 20L20.0279 2.62831M2.65625 20L20.0279 37.3717M2.65625 20L35.3419 20.6991" stroke="currentColor" stroke-width="3.89822" stroke-linecap="round" stroke-linejoin="round"></path>
-								</svg>
-							</a>
-							<ul class="pagination__list">
-								<li class="pagination__item">
-									<a href="#" class="pagination__link active">1</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link">2</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link">3</a>
-								</li>
-								<li class="pagination__item">
-									<span class="pagination__link">....</span>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link">10</a>
-								</li>
-							</ul>
-							<a href="#" class="pagination__arrow">
-								<svg width="38" height="39" viewbox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M35.3438 19.5L17.9721 2.12831M35.3438 19.5L17.9721 36.8717M35.3438 19.5L2.65814 20.1991" stroke="currentColor" stroke-width="3.89822" stroke-linecap="round" stroke-linejoin="round"></path>
-								</svg>
-							</a>
+						<div data-fls-slider="" class="proposals__slider swiper">
+							<div class="proposals__wrapper swiper-wrapper">
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/we-produce/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
+									<div class="product-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+									</div>
+									<div class="product-card__title">крихта гумова</div>
+									<div class="product-card__info">
+										<div class="product-card__row">
+											<div class="product-card__label">ТИП:</div>
+											<div class="product-card__value">SBR</div>
+										</div>
+										<div class="product-card__row">
+											<div class="product-card__label">ДЕТАЛІ:</div>
+											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
+										</div>
+									</div>
+									<button type="button" class="product-card__link button-dark button--small">
+										<span>Переглянути</span>
+										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="proposals__bottom slider-bottom">
+							<div class="slider-bottom__arrows">
+								<button type="button" class="swiper-button-prev">
+									<svg width="46" height="50" viewbox="0 0 46 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.57031 25L24.2849 3.28537M2.57031 25L24.2849 46.7146M2.57031 25L43.4273 25.8739" stroke="currentColor" stroke-width="4.87278" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</button>
+								<button type="button" class="swiper-button-next">
+									<svg width="46" height="50" viewbox="0 0 46 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M43.4297 25L21.7151 3.28537M43.4297 25L21.7151 46.7146M43.4297 25L2.57268 25.8739" stroke="currentColor" stroke-width="4.87278" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</button>
+							</div>
+							<div class="swiper-pagination"></div>
 						</div>
 					</div>
 				</section>
@@ -310,108 +538,6 @@
 								</button>
 							</form>
 							<div class="consultation__descr title title--h6">Заповніть форму і наш менеджер зв’яжеться з вами в найближчі години</div>
-						</div>
-					</div>
-				</section>
-				<section class="text-block">
-					<div class="text-block__container">
-						<div class="text-block__body">
-							<h2 class="text-block__title title title--h3">Alterna — надійний виробник для промислових підприємств з 2008 року</h2>
-							<div class="text-block__block">
-								<p>
-									Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
-                    mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
-                    interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
-                    auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
-                    rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet
-                    lacinia. Aliquam in elementum tellus.
-								</p>
-								<p>
-									Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut
-                    vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean
-                    feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a,
-                    blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend.
-								</p>
-							</div>
-							<div class="text-block__content">
-								<div class="text-block__inner">
-									<div class="text-block__block text-block__block--long">
-										<h3 class="title title--h4 color-red">вигідні рішення та якісна продукція</h3>
-										<p>
-											Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet
-                            ligula. Pellentesque eget augue
-                            nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit purus. Praesent
-                            ac aliquet lorem. Morbi
-                            feugiat aliquam ligula, et vestibulum ligula hendrerit vitae. Sed ex lorem, pulvinar sed
-                            auctor sit amet, molestie a
-                            nibh. Ut euismod nisl arcu, sed placerat nulla volutpat aliquet. Ut id convallis nisl. Ut
-                            mauris leo, lacinia sed elit
-                            id, sagittis rhoncus odio. Pellentesque sapien libero, lobortis a placerat et, malesuada sit
-                            amet dui. Nam sem sapien,
-                            congue eu rutrum nec, pellentesque eget ligula.
-										</p>
-										<a href="#">Vestibulum dictum ultrices elit a luctus.</a>
-										<ol>
-											<li>
-												Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet
-                                ligula. Pellentesque eget augue
-                                nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit purus.
-											</li>
-											<li>
-												Praesent ac aliquet lorem. Morbi feugiat aliquam ligula, et vestibulum ligula hendrerit
-                                vitae. Sed ex lorem, pulvinar
-                                sed auctor sit amet, molestie a nibh. Ut euismod nisl arcu, sed placerat nulla volutpat
-                                aliquet.
-											</li>
-											<li>
-												Ut id convallis nisl. Ut mauris leo, lacinia sed elit id, sagittis rhoncus odio.
-                                Pellentesque sapien libero, lobortis a
-                                placerat et, malesuada sit amet dui. Nam sem sapien, congue eu rutrum nec, pellentesque
-                                eget ligula
-											</li>
-										</ol>
-									</div>
-									<div class="text-block__block">
-										<h3 class="title title--h5 color-red">переваги</h3>
-										<p>
-											Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
-                            est a, mattis tellus. Sed
-                            dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-                            elit sed risus. Maecenas eget
-                            condimentum velit, sit amet feugiat lectus.
-										</p>
-										<ul>
-											<li>
-												Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                                himenaeos.
-											</li>
-											<li>Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar.</li>
-											<li>Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.</li>
-											<li>
-												Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam
-                                in elementum tellus.
-											</li>
-										</ul>
-										<p>
-											Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed
-                            ut vulputate nisi. Integer in
-                            felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu
-                            vestibulum vestibulum. Morbi a
-                            eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit
-                            amet magna non ligula
-                            vestibulum eleifend.
-										</p>
-									</div>
-								</div>
-							</div>
-							<button type="button" class="text-block__more button-empty button-dark button--middle">
-								<span class="text-block__more-text-1">Показати більше</span>
-								<span class="text-block__more-text-2">Показати менше</span>
-								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M20.451 2.33285L20.451 20.7583M20.451 2.33285L2.02555 2.33285M20.451 2.33285L2.7461 19.2963" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
-								</svg>
-							</button>
 						</div>
 					</div>
 				</section>
