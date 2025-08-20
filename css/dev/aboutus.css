@@ -351,7 +351,7 @@
     gap: 12px;
   }
   .reviews__card-bottom {
-    font-size: 9px;
+    font-size: 14px;
   }
 }
 @media (min-width: 29.99875em) and (max-width: 110em) {
@@ -359,7 +359,7 @@
     width: clamp( 16px , 1.0008593616px  +  3.1249511726vw , 56px );
   }
   .reviews__card-bottom {
-    font-size: clamp( 9px , 4.8752363244px  +  0.8593615725vw , 20px );
+    font-size: clamp( 14px , 11.7501289042px  +  0.4687426759vw , 20px );
   }
 }
 @media (min-width: 110em) {
