@@ -31,7 +31,7 @@
   position: absolute;
   top: -110px;
   bottom: 0;
-  right: 0;
+  right: -20px;
   z-index: -1;
   overflow: hidden;
 }
@@ -85,7 +85,8 @@
   }
   .products-hero__img {
     bottom: 190px;
-    width: 100%;
+    width: auto;
+    left: -20px;
   }
   .products-hero__img::after {
     height: 30px;
