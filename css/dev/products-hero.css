@@ -5,7 +5,7 @@
 }
 .products-hero__title {
   color: var(--red);
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .products-hero__inner {
   display: flex;
@@ -15,7 +15,7 @@
   margin-bottom: 30px;
 }
 .products-hero__items:not(:last-child) {
-  margin-bottom: 170px;
+  margin-bottom: 50px;
 }
 .products-hero__btns {
   display: flex;
@@ -68,11 +68,11 @@
 }
 @media (max-width: 40.62375em) {
   .products-hero__title {
-    margin-bottom: 125px;
+    margin-bottom: 100px;
   }
   .products-hero__inner {
     flex-direction: column-reverse;
-    gap: 110px;
+    gap: 70px;
   }
   .products-hero__items {
     max-width: 100%;

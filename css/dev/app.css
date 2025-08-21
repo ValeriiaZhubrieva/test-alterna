@@ -1622,7 +1622,26 @@ textarea.input {
     min-height: 120px;
   }
   .breadcrumbs {
-    margin-bottom: 20px;
+    margin: 0 -20px 20px -20px;
+    padding: 0 20px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .breadcrumbs::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .breadcrumbs__container {
+    display: flex;
+    align-items: center;
+  }
+  .breadcrumbs__link {
+    font-size: 16px;
+    white-space: nowrap;
   }
   .blocks-inner {
     margin-bottom: 70px;
