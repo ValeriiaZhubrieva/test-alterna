@@ -41,6 +41,18 @@
   object-fit: cover;
   object-position: top;
 }
+.products-hero__img::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  right: 0;
+  height: 54px;
+  background: linear-gradient(to bottom, transparent, #f0efef);
+  mask-image: linear-gradient(to bottom, transparent, #f0efef);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
 @media (max-width: 61.99875em) {
   .products-hero__img {
     top: 0;
