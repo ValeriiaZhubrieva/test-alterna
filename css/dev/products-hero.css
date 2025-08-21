@@ -41,15 +41,6 @@
   object-fit: cover;
   object-position: top;
 }
-.products-hero__img::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  width: 100%;
-  right: 0;
-  height: 54px;
-  background: linear-gradient(180deg, rgba(240, 239, 239, 0) 0%, rgba(240, 239, 239, 0.6) 100%);
-}
 @media (max-width: 61.99875em) {
   .products-hero__img {
     top: 0;
