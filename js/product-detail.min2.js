@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const t=document.querySelector(".fixed-block-hide"),e=document.querySelector(".fixed-block");if(!t||!e)return;new IntersectionObserver(o=>{o.forEach(r=>{r.isIntersecting?e.classList.add("hide"):e.classList.remove("hide")})},{threshold:.1}).observe(t)});

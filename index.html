@@ -11,16 +11,17 @@
 		<link rel="preload" href="./assets/fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1755679119363"></script>
-		<script type="module" crossorigin="" src="./js/slider.min.js?v=1755679119363"></script>
-		<script type="module" crossorigin="" src="./js/textblock.min.js?v=1755679119363"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755679119363">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1755679119363">
-		<link rel="stylesheet" crossorigin="" href="./css/textblock.min.css?v=1755679119363">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1755679119363">
-		<link rel="stylesheet" crossorigin="" href="./css/partners.min.css?v=1755679119363">
-		<link rel="stylesheet" crossorigin="" href="./css/proposals.min.css?v=1755679119363">
-		<link rel="stylesheet" crossorigin="" href="./css/consultation.min.css?v=1755679119363">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1755763278287"></script>
+		<script type="module" crossorigin="" src="./js/slider.min.js?v=1755763278287"></script>
+		<script type="module" crossorigin="" src="./js/textblock.min.js?v=1755763278287"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755763278287">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1755763278287">
+		<link rel="stylesheet" crossorigin="" href="./css/textblock.min.css?v=1755763278287">
+		<link rel="stylesheet" crossorigin="" href="./css/products.min.css?v=1755763278287">
+		<link rel="stylesheet" crossorigin="" href="./css/weproduce.min.css?v=1755763278287">
+		<link rel="stylesheet" crossorigin="" href="./css/partners.min.css?v=1755763278287">
+		<link rel="stylesheet" crossorigin="" href="./css/proposals.min.css?v=1755763278287">
+		<link rel="stylesheet" crossorigin="" href="./css/consultation.min.css?v=1755763278287">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -117,22 +118,22 @@
 											</svg>
 										</a>
 									</div>
-									<div class="hero__items">
-										<a href="#" class="hero__item">
-											<div class="hero__item-title">ГТВ</div>
-											<div class="hero__item-img">
+									<div class="hero__items category-block">
+										<a href="#" class="category-block__item">
+											<div class="category-block__item-title">ГТВ</div>
+											<div class="category-block__item-img">
 												<img src="./assets/img/icons/gtv.svg" alt="Image" loading="lazy">
 											</div>
 										</a>
-										<a href="#" class="hero__item">
-											<div class="hero__item-title">ЗІЗ</div>
-											<div class="hero__item-img">
+										<a href="#" class="category-block__item">
+											<div class="category-block__item-title">ЗІЗ</div>
+											<div class="category-block__item-img">
 												<img src="./assets/img/icons/ziz.svg" alt="Image" loading="lazy">
 											</div>
 										</a>
-										<a href="#" class="hero__item">
-											<div class="hero__item-title">ОБЛАДНАННЯ ДЛЯ ІНФРАСТРУКТУРИ</div>
-											<div class="hero__item-img">
+										<a href="#" class="category-block__item">
+											<div class="category-block__item-title">ОБЛАДНАННЯ ДЛЯ ІНФРАСТРУКТУРИ</div>
+											<div class="category-block__item-img">
 												<img src="./assets/img/icons/infr.svg" alt="Image" loading="lazy">
 											</div>
 										</a>
@@ -315,7 +316,7 @@
 						<div class="proposals__head">
 							<h2 class="proposals__title title title--h3">популярні товари</h2>
 							<a href="#" class="proposals__btn button-empty button-dark button--middle">
-								<span>До каталогу</span>
+								<span>Галерея</span>
 								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M20.451 2.33309L20.451 20.7586M20.451 2.33309L2.02555 2.33309M20.451 2.33309L2.7461 19.2965" stroke="currentColor" stroke-width="3.32035" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg>
@@ -338,12 +339,12 @@
 											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
 										</div>
 									</div>
-									<button type="button" class="product-card__link button-dark button--small">
+									<div class="product-card__link button-dark button--small">
 										<span>Переглянути</span>
 										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-									</button>
+									</div>
 								</a>
 								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
 									<div class="product-card__img">
@@ -360,12 +361,12 @@
 											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
 										</div>
 									</div>
-									<button type="button" class="product-card__link button-dark button--small">
+									<div class="product-card__link button-dark button--small">
 										<span>Переглянути</span>
 										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-									</button>
+									</div>
 								</a>
 								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
 									<div class="product-card__img">
@@ -382,12 +383,12 @@
 											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
 										</div>
 									</div>
-									<button type="button" class="product-card__link button-dark button--small">
+									<div class="product-card__link button-dark button--small">
 										<span>Переглянути</span>
 										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-									</button>
+									</div>
 								</a>
 								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
 									<div class="product-card__img">
@@ -404,12 +405,12 @@
 											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
 										</div>
 									</div>
-									<button type="button" class="product-card__link button-dark button--small">
+									<div class="product-card__link button-dark button--small">
 										<span>Переглянути</span>
 										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-									</button>
+									</div>
 								</a>
 								<a href="#" class="proposals__slide swiper-slide product-card product-card--small">
 									<div class="product-card__img">
@@ -426,12 +427,12 @@
 											<div class="product-card__value">Фракція (0,8 — 4 мм)</div>
 										</div>
 									</div>
-									<button type="button" class="product-card__link button-dark button--small">
+									<div class="product-card__link button-dark button--small">
 										<span>Переглянути</span>
 										<svg width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M16.1944 2.06641V16.8068M16.1944 2.06641H1.45404M16.1944 2.06641L2.03047 15.6371" stroke="currentColor" stroke-width="2.65628" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-									</button>
+									</div>
 								</a>
 							</div>
 						</div>
@@ -733,7 +734,7 @@
 					</div>
 				</section>
 			</main>
-			<footer class="footer">
+			<footer class="footer fixed-block-hide">
 				<div class="footer__container">
 					<div class="footer__head">
 						<div class="footer__title title title--h1">alterna —</div>

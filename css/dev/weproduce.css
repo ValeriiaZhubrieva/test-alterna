@@ -1,0 +1,237 @@
+.hero {
+  padding-top: 36px;
+  margin-bottom: 140px;
+  position: relative;
+  z-index: 3;
+}
+.hero__body {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 37px;
+}
+.hero__title {
+  color: var(--red);
+}
+.hero__inner {
+  grid-row: 2;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 37px;
+}
+.hero__content {
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+}
+.hero__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.hero__btn {
+  max-width: 100%;
+}
+.hero__descr {
+  margin-top: auto;
+}
+.hero__img {
+  position: relative;
+  z-index: -1;
+}
+.hero__img img {
+  width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 50px rgba(22, 22, 22, 0.4));
+}.we-produce {
+  margin-bottom: 140px;
+}
+.we-produce__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.we-produce__btn {
+  max-width: 357px;
+  width: 100%;
+}
+.we-produce__slider {
+  overflow: visible;
+  min-width: 0;
+}
+.we-produce__slider:not(:last-child) {
+  margin-bottom: 30px;
+}
+.we-produce__card {
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.we-produce__card > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.we-produce__card-img {
+  max-width: 464px;
+  margin: 0 auto;
+  aspect-ratio: 464/348;
+  overflow: hidden;
+}
+.we-produce__card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.we-produce__card-title {
+  flex: 1 1 auto;
+  font-family: var(--second-family);
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+}
+.we-produce__card-title:not(:last-child) {
+  margin-bottom: 50px;
+}
+.we-produce__card-link {
+  max-width: 100%;
+}
+@media (max-width: 74.99875em) {
+  .we-produce__card {
+    padding: 24px 20px;
+  }
+}
+@media (max-width: 61.99875em) {
+  .hero {
+    padding-top: 10px;
+  }
+  .hero__content {
+    gap: 37px;
+  }
+  .hero__content {
+    gap: 37px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .hero {
+    margin-bottom: 70px;
+  }
+  .hero__body {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+  .hero__title {
+    order: -1;
+  }
+  .hero__inner {
+    grid-row: auto;
+    grid-column: auto;
+    gap: 62px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero__content {
+    max-width: none;
+  }
+  .hero__img {
+    order: -1;
+    margin: -30px -20px -30% -20px;
+  }
+  .we-produce {
+    margin-bottom: 70px;
+  }
+  .we-produce__container {
+    display: grid;
+    min-width: 0;
+  }
+  .we-produce__head {
+    margin-bottom: 0;
+    display: contents;
+  }
+  .we-produce__title {
+    margin-bottom: 30px;
+  }
+  .we-produce__btn {
+    order: 1;
+    margin-top: 24px;
+  }
+  .we-produce__slider:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .we-produce__card > *:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .we-produce__card-title {
+    font-size: 20px;
+  }
+  .we-produce__card-title:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .we-produce__bottom:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .hero__img {
+    margin-bottom: -50%;
+  }
+  .we-produce__btn {
+    max-width: 100%;
+  }
+  .we-produce__card {
+    border-radius: 12px;
+  }
+  .we-produce__card-title:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 24.99875em) {
+  .hero__img {
+    margin-bottom: -70%;
+  }
+}
+@media (min-width: 47.99875em) and (max-width: 110em) {
+  .we-produce__card-title {
+    font-size: clamp( 20px , 9.1617910929px  +  1.4112618697vw , 34px );
+  }
+}
+@media (min-width: 47.99875em) {
+  .hero__title {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .hero__img {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    max-width: 67%;
+    margin-left: auto;
+  }
+}
+@media (min-width: 61.99875em) and (max-width: 110em) {
+  .hero__content {
+    gap: clamp( 37px , -59.8705242051px  +  9.7653706935vw , 112px );
+  }
+}
+@media (min-width: 61.99875em) {
+  .hero__img {
+    margin-top: -116px;
+    margin-right: 8%;
+  }
+}
+@media (min-width: 110em) {
+  .hero__inner {
+    padding-bottom: 127px;
+  }
+  .hero__content {
+    gap: 112px;
+  }
+  .we-produce__card-title {
+    font-size: 34px;
+  }
+}
